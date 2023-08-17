@@ -1,0 +1,39 @@
+class Cliente:
+    def __init__(self, nombre, tarjeta_credito):
+        self.nombre = nombre
+        self.tarjeta_credito = tarjeta_credito
+
+    def comprar_aplicacion(self, aplicacion):
+        # Lógica para comprar aplicaciones
+        print(f"¡Compra exitosa! Has adquirido la aplicación {aplicacion.nombre}.")
+
+class Aplicacion:
+    def __init__(self, nombre, precio):
+        self.nombre = nombre
+        self.precio = precio
+
+# Función para crear una cuenta de cliente
+def crear_cuenta():
+    nombre = input("Ingresa tu nombre: ")
+    marca = input("Marca de la tarjeta de crédito: ")
+    numero = input("Número de tarjeta de crédito: ")
+    vencimiento = input("Fecha de vencimiento (MM/AA): ")
+    codigo = input("Código de verificación: ")
+
+    tarjeta_credito = {
+        "marca": marca,
+        "numero": numero,
+        "vencimiento": vencimiento,
+        "codigo": codigo
+    }
+
+    cliente = Cliente(nombre, tarjeta_credito)
+    print(f"Cuenta creada para {cliente.nombre}.")
+
+    return cliente
+
+# Ejemplo de uso
+aplicacion1 = Aplicacion("App1", 10)
+cliente1 = crear_cuenta()
+
+cliente1.comprar_aplicacion(aplicacion1)
