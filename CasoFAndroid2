@@ -1,0 +1,38 @@
+class Cliente:
+    def __init__(self, nombre):
+        self.nombre = nombre
+        self.tarjeta_credito = None
+
+    def asociar_tarjeta_credito(self, marca, numero, vencimiento, codigo):
+        self.tarjeta_credito = {
+            "marca": marca,
+            "numero": numero,
+            "vencimiento": vencimiento,
+            "codigo": codigo
+        }
+        print("Tarjeta de crédito asociada exitosamente.")
+
+    def comprar_aplicacion(self, aplicacion):
+        if self.tarjeta_credito:
+            print(f"¡Compra exitosa! Has adquirido la aplicación '{aplicacion}'.")
+        else:
+            print("No se puede realizar la compra. Asocia una tarjeta de crédito primero.")
+
+# Clase para representar una aplicación
+class Aplicacion:
+    def __init__(self, nombre, precio):
+        self.nombre = nombre
+        self.precio = precio
+
+# Función para crear una cuenta de cliente
+def crear_cuenta():
+    nombre = input("Ingresa tu nombre: ")
+    cliente = Cliente(nombre)
+    print(f"Cuenta creada para {cliente.nombre}.")
+    return cliente
+
+# Ejemplo de uso
+cliente = crear_cuenta()
+cliente.asociar_tarjeta_credito("Visa", "1234-5678-9012-3456", "12/25", "123")
+aplicacion = Aplicacion("App1", 10)
+cliente.comprar_aplicacion(aplicacion)
