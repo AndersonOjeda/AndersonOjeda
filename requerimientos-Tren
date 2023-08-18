@@ -1,0 +1,52 @@
+Requerimientos Funcionales:
+
+Selección de Destino:
+
+Los usuarios deben poder seleccionar un destino de una lista de opciones disponibles.
+Introducción de Tarjeta de Crédito y Número de Identificación Personal:
+
+Los usuarios deben poder introducir su información de tarjeta de crédito y su número de identificación personal.
+Expedición de Billete:
+
+Un billete de tren debe ser generado y expedido al usuario después de que haya seleccionado su destino y completado la transacción.
+Carga a la Tarjeta de Crédito:
+
+El costo del billete debe ser cargado a la cuenta de la tarjeta de crédito del usuario.
+Activación del Menú de Destinos:
+
+Cuando el usuario presione el botón de inicio, debe activarse un menú que muestre los posibles destinos.
+Validación del Destino Seleccionado:
+
+El sistema debe verificar si el destino seleccionado por el usuario es válido y se encuentra en la lista de opciones disponibles.
+Introducción de Identificador Personal:
+
+Después de seleccionar el destino, se debe solicitar al usuario que introduzca un identificador personal para validar la transacción.
+Validación de Transacción de Crédito:
+
+El sistema debe validar la transacción de crédito antes de expedir el billete.
+Requerimientos No Funcionales:
+
+Seguridad:
+
+La información de la tarjeta de crédito y el número de identificación personal deben manejarse de manera segura y encriptada para proteger la privacidad del usuario.
+Rendimiento:
+
+El sistema debe responder de manera rápida y eficiente durante la selección de destino, la introducción de información y la expedición del billete.
+Usabilidad:
+
+La interfaz de usuario debe ser intuitiva y fácil de usar, permitiendo a los usuarios completar el proceso de manera sencilla.
+Disponibilidad:
+
+El sistema debe estar disponible en todo momento para que los usuarios puedan comprar billetes en cualquier momento.
+Validación de Tarjeta de Crédito:
+
+La validación de la tarjeta de crédito debe cumplir con los estándares de seguridad y procesamiento de pagos para prevenir fraudes.
+Seguridad de Transacciones:
+
+La validación de la transacción de crédito debe ser robusta y precisa para evitar problemas durante el proceso de compra.
+Mantenibilidad:
+
+El sistema debe ser modular y fácil de mantener para facilitar actualizaciones y correcciones en el futuro.
+Compatibilidad:
+
+El sistema debe ser compatible con una variedad de tarjetas de crédito y plataformas de pago.
