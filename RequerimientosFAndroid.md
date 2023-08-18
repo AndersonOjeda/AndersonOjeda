@@ -14,6 +14,8 @@ Compra de Aplicaciones:
 
 Los usuarios registrados deben poder comprar aplicaciones desde la plataforma.
 La plataforma debe almacenar de manera segura la información de tarjeta de crédito para realizar compras.
+impresion:
+imprimir los boletos con su respectiva informacion.
 
 No Funcionales:
 
